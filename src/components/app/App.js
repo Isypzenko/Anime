@@ -1,8 +1,9 @@
+import Header from '../Header'
+
+
 const App = () => {
   return (
-    <p>
-      hello
-    </p>
+    <Header/>
   )
 }
 
