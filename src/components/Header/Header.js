@@ -4,13 +4,18 @@ import ButtonGroup from "./ButtonGroup";
 
 const Header = () => {
   return (
-    <header>
-      <div className="logo"></div>
-      <div className="buttons">
+      <header class="header">
+      <div className="header__logo">
+        <img src="img/logo.png" alt="" />
+      </div>
+      <div className="header__buttons">
         <ButtonGroup />
       </div>
-      <div className="search"></div>
-    </header>
+      <div className="header__search">
+      <input type="text" id="search" placeholder="Поиск"/>
+      <img src="icons/search.svg" alt="Icon_search" />
+      </div>
+      </header>
   )
 }
 export default Header;
