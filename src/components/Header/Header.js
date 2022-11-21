@@ -1,13 +1,16 @@
-import "./header.css"
+import "./header.css";
 
+import ButtonGroup from "./ButtonGroup";
 
 const Header = () => {
   return (
-      <header>
+    <header>
       <div className="logo"></div>
-      <div className="buttons"></div>
+      <div className="buttons">
+        <ButtonGroup />
+      </div>
       <div className="search"></div>
-      </header>
+    </header>
   )
 }
 export default Header;
