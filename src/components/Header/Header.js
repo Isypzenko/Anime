@@ -4,7 +4,7 @@ import ButtonGroup from "./ButtonGroup";
 
 const Header = () => {
   return (
-      <header class="header">
+    <header className="header">
       <div className="header__logo">
         <img src="img/logo.png" alt="" />
       </div>
@@ -12,10 +12,10 @@ const Header = () => {
         <ButtonGroup />
       </div>
       <div className="header__search">
-      <input type="text" id="search" placeholder="Поиск"/>
-      <img src="icons/search.svg" alt="Icon_search" />
+        <input type="text" id="search" placeholder="Поиск" />
+        <img src="icons/search.svg" alt="Icon_search" />
       </div>
-      </header>
+    </header>
   )
 }
 export default Header;
