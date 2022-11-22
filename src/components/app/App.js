@@ -1,21 +1,16 @@
 import Header from '../Header'
+import {Routes, Route} from 'react-router-dom'
 
-import { useSelector, useDispatch } from 'react-redux';
-import { decrement, increment } from '../../store/counterSlice';
 
 const App = () => {
-  const count = useSelector((state) => state.counter.value)
-  const dispatch = useDispatch()
+
 
   return (
-    <>
-      <Header />
 
-      <div>{count}</div>
-      <div onClick={() => dispatch(increment())}>+</div>
-      <div onClick={() => dispatch(decrement())}>-</div>
+    <Routes >
+      <Route path='' element={<Header/>}></Route>
+    </Routes>
 
-    </>
   )
 }
 
