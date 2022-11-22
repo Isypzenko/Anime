@@ -1,11 +1,15 @@
-import "./header.css"
+import "./header.css";
 
+import ButtonGroup from "./ButtonGroup";
 
 const Header = () => {
   return (
       <header class="header">
       <div className="header__logo">
         <img src="img/logo.png" alt="" />
+      </div>
+      <div className="header__buttons">
+        <ButtonGroup />
       </div>
       <div className="header__search">
       <input type="text" id="search" placeholder="Поиск"/>
